@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Главная | EduPro</title>
+    <link rel="stylesheet" href="scss/common.css">
+    <link rel="stylesheet" href="scss/index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="svg/logo.svg" alt="EduPro">
+                <span>EduPro</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="catalog.html">Каталог курсов</a></li>
+                <li><a href="results.html">Результаты</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <div class="burger">☰</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Готовься к ЦТ/ЦЭ на 90+ баллов</h1>
+            <p>Индивидуальный подход, опытные репетиторы, гарантия результата</p>
+            <div class="stats">
+                <div class="stat-card">
+                    <img src="svg/cap.svg" alt="🎓" class="stat-icon">
+                    21 000+ выпускников
+                </div>
+                <div class="stat-card">
+                    <img src="svg/star.svg" alt="⭐" class="stat-icon">
+                    Средний балл 84
+                </div>
+                <div class="stat-card">
+                    <img src="svg/trophy.svg" alt="🏆" class="stat-icon">
+                    312 стобалльников
+                </div>
+             </div>
+            <button class="btn-primary" id="heroBtn">Записаться на пробный урок</button>
+        </section>
+
+        <section class="container">
+            <h2> Ключевые предметы</h2>
+            <div class="cards-grid" id="previewSubjects">
+                <div class="course-card">
+                    <div class="course-title">Загрузка...</div>
+                    <div class="teacher-name">Загрузка...</div>
+                    <div class="price">--- BYN</div>
+                </div>
+                <div class="course-card">
+                    <div class="course-title">Загрузка...</div>
+                    <div class="teacher-name">Загрузка...</div>
+                    <div class="price">--- BYN</div>
+                </div>
+                <div class="course-card">
+                    <div class="course-title">Загрузка...</div>
+                    <div class="teacher-name">Загрузка...</div>
+                    <div class="price">--- BYN</div>
+                </div>
+                <div class="course-card">
+                    <div class="course-title">Загрузка...</div>
+                    <div class="teacher-name">Загрузка...</div>
+                    <div class="price">--- BYN</div>
+                </div>
+            </div>
+
+            <h2> Наши лучшие преподаватели</h2>
+            <div class="teachers-grid">
+                <div class="teacher-card">
+                    <img src="image/photo/teacher_1.jpg" alt="Анна Петровна" class="teacher-photo" onerror="this.src='https://via.placeholder.com/120?text=Фото'">
+                    <h3 class="teacher-name">Аделина Олеговна</h3>
+                    <div class="teacher-subject">Математика</div>
+                    <div class="teacher-achievement">28 стобалльников</div>
+                </div>
+                <div class="teacher-card">
+                    <img src="image/photo/teacher_2.jpg" alt="Сергей Александрович" class="teacher-photo" onerror="this.src='https://via.placeholder.com/120?text=Фото'">
+                    <h3 class="teacher-name">Станислав Денисович</h3>
+                    <div class="teacher-subject">Русский язык</div>
+                    <div class="teacher-achievement">12 стобалльников</div>
+                </div>
+                <div class="teacher-card">
+                    <img src="image/photo/teacher_3.jpg" alt="Денис Владимирович" class="teacher-photo" onerror="this.src='https://via.placeholder.com/120?text=Фото'">
+                    <h3 class="teacher-name">Константин Алексеевич</h3>
+                    <div class="teacher-subject">Белорусский язык</div>
+                    <div class="teacher-achievement">9 стобалльников</div>
+                </div>
+                <div class="teacher-card">
+                    <img src="image/photo/teacher_4.jpg" alt="Екатерина Сергеевна" class="teacher-photo" onerror="this.src='https://via.placeholder.com/120?text=Фото'">
+                    <h3 class="teacher-name">Виктория Андреевна</h3>
+                    <div class="teacher-subject">Английский язык</div>
+                    <div class="teacher-achievement">15 стобалльников</div>
+                </div>
+            </div>
+
+            <h2> Отзывы учеников</h2>
+            <div class="reviews-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="image/photo/stud_1.jpg" alt="Анастасия Бочко" class="testimonial-photo" onerror="this.src='https://via.placeholder.com/64?text=Фото'">
+                        <div class="testimonial-info">
+                            <h4>Анастасия Бочко</h4>
+                            <div class="testimonial-date">июнь 2025</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars"></div>
+                    <div class="testimonial-text">“Благодаря курсам по математике сдала ЦТ на 80 баллов! Преподаватель отлично объясняет очень сложные темы, домашние задания проверяют вовремя.”</div>
+                    <span class="testimonial-subject">Математика — 80 баллов</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="image/photo/stud_2.jpg" alt="Лис Денис" class="testimonial-photo" onerror="this.src='https://via.placeholder.com/64?text=Фото'">
+                        <div class="testimonial-info">
+                            <h4>Лис Денис</h4>
+                            <div class="testimonial-date">июль 2025</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars"></div>
+                    <div class="testimonial-text">“С нуля до 67 баллов по английскому всего за полгода! Денис Владимирович — настоящий профессионал, занятия проходили в очень комфортной атмосфере.”</div>
+                    <span class="testimonial-subject">Английский язык — 67 баллов</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="image/photo/stud_3.jpg" alt="Екатерина Мороз" class="testimonial-photo" onerror="this.src='https://via.placeholder.com/64?text=Фото'">
+                        <div class="testimonial-info">
+                            <h4>Екатерина Мороз</h4>
+                            <div class="testimonial-date">май 2025</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars"></div>
+                    <div class="testimonial-text">“Физика - мой самый сложный предмет, но с Алексеем Павловичем я полюбила её! Результат - 95 баллов. Спасибо за веру в меня!”</div>
+                    <span class="testimonial-subject">Физика - 95 баллов</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p> +375 (29) 123-45-67 |  info@edupro.by</p>
+        <p>© 2026 Образовательный портал | Режим работы: пн-вс 10:00 – 22:00</p>  
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        if (typeof window.fillHomePreview === 'function') fillHomePreview();
+        
+        const heroBtn = document.getElementById('heroBtn');
+        if (heroBtn) {
+            heroBtn.onclick = () => {
+                window.location.href = 'catalog.html';  // или 'contacts.html'
+            };
+        }
+    });
+</script>
+</body>
+</html>

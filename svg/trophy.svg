@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28">
+    <defs>
+        <linearGradient id="trophyGold" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffd700"/>
+            <stop offset="100%" style="stop-color:#f4a261"/>
+        </linearGradient>
+    </defs>
+    <!-- Чаша -->
+    <path d="M8 3 L10 14 L18 14 L20 3 Z" fill="url(#trophyGold)" stroke="#b8860b" stroke-width="0.8"/>
+    <!-- Ручки -->
+    <path d="M8 6 C5 6,5 11,8 11" fill="none" stroke="#ffd700" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M20 6 C23 6,23 11,20 11" fill="none" stroke="#ffd700" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Ножка -->
+    <rect x="13" y="14" width="2" height="4" fill="url(#trophyGold)"/>
+    <!-- Основание -->
+    <rect x="9" y="18" width="10" height="2" fill="url(#trophyGold)" rx="1"/>
+    
+</svg>

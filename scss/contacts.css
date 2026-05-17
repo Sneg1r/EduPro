@@ -1,0 +1,191 @@
+.contact-grid {
+  display: flex;
+  gap: 28px;
+  margin: 24px 0;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  min-width: 260px;
+}
+.contact-card h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #2c5f8a;
+}
+.contact-card p {
+  margin: 10px 0;
+  font-size: 15px;
+  color: #334155;
+}
+.contact-card input, .contact-card textarea {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 20px;
+  font-size: 15px;
+  font-family: inherit;
+}
+.contact-card input:focus, .contact-card textarea:focus {
+  outline: none;
+  border-color: #2c5f8a;
+}
+.contact-card button {
+  background: #2c5f8a;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.contact-card button:hover {
+  background: #1f3e57;
+}
+
+.social {
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.social span {
+  background: #e2e8f0;
+  padding: 5px 14px;
+  border-radius: 30px;
+  font-size: 14px;
+  color: #2c5f8a;
+  cursor: pointer;
+}
+.social span:hover {
+  background: #2c5f8a;
+  color: #ffffff;
+}
+
+.map-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 18px 24px;
+  margin-top: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.map-card p {
+  margin: 0;
+  font-size: 15px;
+  color: #334155;
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    gap: 20px;
+  }
+  .contact-card {
+    padding: 20px;
+  }
+  .contact-card h3 {
+    font-size: 18px;
+  }
+  .contact-card p, .contact-card input, .contact-card textarea {
+    font-size: 14px;
+  }
+  .contact-card input, .contact-card textarea {
+    padding: 8px 12px;
+  }
+  .contact-card button {
+    padding: 8px 16px;
+    font-size: 14px;
+    width: 100%;
+  }
+  .social span {
+    padding: 4px 12px;
+    font-size: 13px;
+  }
+  .map-card {
+    padding: 14px 20px;
+  }
+  .map-card p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+    gap: 16px;
+    margin: 16px 0;
+  }
+  .contact-card {
+    flex: 100%;
+    min-width: auto;
+    padding: 18px;
+  }
+  .contact-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .contact-card p {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+  .contact-card input, .contact-card textarea {
+    padding: 10px 12px;
+    margin-bottom: 12px;
+  }
+  .contact-card button {
+    width: 100%;
+    padding: 10px 16px;
+  }
+  .social {
+    gap: 10px;
+    justify-content: center;
+  }
+  .social span {
+    padding: 6px 14px;
+    font-size: 13px;
+  }
+  .map-card {
+    padding: 14px 16px;
+    text-align: center;
+  }
+  .map-card p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 480px) {
+  .contact-card {
+    padding: 14px;
+  }
+  .contact-card h3 {
+    font-size: 16px;
+  }
+  .contact-card p, .contact-card input, .contact-card textarea, .contact-card button {
+    font-size: 13px;
+  }
+  .contact-card input, .contact-card textarea {
+    padding: 8px 10px;
+  }
+  .contact-card button {
+    padding: 8px 14px;
+  }
+  .social {
+    gap: 8px;
+  }
+  .social span {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+  .map-card {
+    padding: 12px;
+  }
+  .map-card p {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=contacts.css.map */

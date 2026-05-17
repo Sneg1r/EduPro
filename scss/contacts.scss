@@ -1,0 +1,152 @@
+// ===== ПЕРЕМЕННЫЕ =====
+$primary: #2c5f8a;
+$primary-dark: #1f3e57;
+$white: #ffffff;
+$gray-light: #e2e8f0;
+$border-color: #cbd5e1;
+$text-dark: #334155;
+$shadow: 0 4px 12px rgba(0,0,0,0.05);
+
+// ===== СТРАНИЦА КОНТАКТОВ =====
+.contact-grid {
+    display: flex;
+    gap: 28px;
+    margin: 24px 0;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    flex: 1;
+    background: $white;
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: $shadow;
+    border: 1px solid $gray-light;
+    min-width: 260px;
+
+    h3 {
+        font-size: 20px;
+        margin-bottom: 16px;
+        color: $primary;
+    }
+
+    p {
+        margin: 10px 0;
+        font-size: 15px;
+        color: $text-dark;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px 14px;
+        margin-bottom: 14px;
+        border: 1px solid $border-color;
+        border-radius: 20px;
+        font-size: 15px;
+        font-family: inherit;
+
+        &:focus {
+            outline: none;
+            border-color: $primary;
+        }
+    }
+
+    button {
+        background: $primary;
+        color: $white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 30px;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:hover { background: $primary-dark; }
+    }
+}
+
+.social {
+    margin-top: 16px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    span {
+        background: $gray-light;
+        padding: 5px 14px;
+        border-radius: 30px;
+        font-size: 14px;
+        color: $primary;
+        cursor: pointer;
+
+        &:hover {
+            background: $primary;
+            color: $white;
+        }
+    }
+}
+
+.map-card {
+    background: $white;
+    border-radius: 24px;
+    padding: 18px 24px;
+    margin-top: 16px;
+    border: 1px solid $gray-light;
+    box-shadow: $shadow;
+
+    p {
+        margin: 0;
+        font-size: 15px;
+        color: $text-dark;
+    }
+}
+
+// ===== АДАПТИВ (объединён) =====
+@media (max-width: 900px) {
+    .contact-grid { gap: 20px; }
+    
+    .contact-card {
+        padding: 20px;
+        h3 { font-size: 18px; }
+        p, input, textarea { font-size: 14px; }
+        input, textarea { padding: 8px 12px; }
+        button { padding: 8px 16px; font-size: 14px; width: 100%; }
+    }
+    
+    .social span { padding: 4px 12px; font-size: 13px; }
+    .map-card { padding: 14px 20px; p { font-size: 14px; } }
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        flex-direction: column;
+        gap: 16px;
+        margin: 16px 0;
+    }
+    
+    .contact-card {
+        flex: 100%;
+        min-width: auto;
+        padding: 18px;
+        h3 { font-size: 18px; margin-bottom: 12px; }
+        p { font-size: 14px; margin: 8px 0; }
+        input, textarea { padding: 10px 12px; margin-bottom: 12px; }
+        button { width: 100%; padding: 10px 16px; }
+    }
+    
+    .social { gap: 10px; justify-content: center; span { padding: 6px 14px; font-size: 13px; } }
+    .map-card { padding: 14px 16px; text-align: center; p { font-size: 13px; } }
+}
+
+@media (max-width: 480px) {
+    .contact-card {
+        padding: 14px;
+        h3 { font-size: 16px; }
+        p, input, textarea, button { font-size: 13px; }
+        input, textarea { padding: 8px 10px; }
+        button { padding: 8px 14px; }
+    }
+    
+    .social { gap: 8px; span { padding: 4px 10px; font-size: 12px; } }
+    .map-card { padding: 12px; p { font-size: 12px; } }
+}

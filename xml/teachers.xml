@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teachers>
+    <course category="математика">
+        <title>Математика</title>
+        <teacher>Аделина Сергеевна</teacher>
+        <teacherImage>/image/photo/teacher_1.jpg</teacherImage>
+        <achievement>28 стобалльников</achievement>
+        <price>23</price>
+        <currency>BYN</currency>
+    </course>
+    
+    <course category="язык">
+        <title>Русский язык</title>
+        <teacher>Станислав Денисович</teacher>
+        <teacherImage>/image/photo/teacher_2.jpg</teacherImage>
+        <achievement>12 стобалльников</achievement>
+        <price>23</price>
+        <currency>BYN</currency>
+    </course>
+    
+    <course category="язык">
+        <title>Белорусский язык</title>
+        <teacher>Константин Алексеевич</teacher>
+        <teacherImage>image/photo/teacher_3.jpg</teacherImage>
+        <achievement>9 стобалльников</achievement>
+        <price>23</price>
+        <currency>BYN</currency>
+    </course>
+    
+    <course category="язык">
+        <title>Английский язык</title>
+        <teacher>Виктория Андреевна</teacher>
+        <teacherImage>image/photo/teacher_4.jpg</teacherImage>
+        <achievement>15 стобалльников</achievement>
+        <price>25</price>
+        <currency>BYN</currency>
+    </course>
+    
+    <course category="физика">
+        <title>Физика</title>
+        <teacher>Алексей Павлович</teacher>
+        <teacherImage>image/photo/teacher_5.jpg</teacherImage>
+        <achievement>10 стобалльников</achievement>
+        <price>24</price>
+        <currency>BYN</currency>
+    </course>
+    
+    <course category="химия">
+        <title>Химия</title>
+        <teacher>Максим Андреевич</teacher>
+        <teacherImage>image/photo/teacher_6.jpg</teacherImage>
+        <achievement>7 стобалльников</achievement>
+        <price>25</price>
+        <currency>BYN</currency>
+    </course>
+    
+    <course category="биология">
+        <title>Биология</title>
+        <teacher>Екатерина Сергеевна</teacher>
+        <teacherImage>image/photo/teacher_7.jpg</teacherImage>
+        <achievement>10 стобалльников</achievement>
+        <price>25</price>
+        <currency>BYN</currency>
+    </course>
+    
+    <course category="история">
+        <title>История Беларуси</title>
+        <teacher>Ольга Николаевна</teacher>
+        <teacherImage>image/photo/teacher_8.jpg</teacherImage>
+        <achievement>11 стобалльников</achievement>
+        <price>23</price>
+        <currency>BYN</currency>
+    </course>
+</teachers>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="35" height="35">
+    <!-- Фоновый круг -->
+    <circle cx="50" cy="50" r="48" fill="#2c5f8a"/>
+    
+    <!-- Левая страница -->
+    <path d="M 30 30 L 30 72 L 48 68 L 48 28 Z" fill="#ffffff"/>
+    
+    <!-- Правая страница -->
+    <path d="M 52 28 L 52 68 L 70 72 L 70 30 Z" fill="#f0f4f8"/>
+    
+    <!-- Корешок -->
+    <line x1="48" y1="28" x2="48" y2="68" stroke="#1f3e57" stroke-width="2"/>
+    <line x1="52" y1="28" x2="52" y2="68" stroke="#1f3e57" stroke-width="1.5"/>
+    
+    <!-- Строки текста -->
+    <line x1="35" y1="42" x2="46" y2="40" stroke="#2c5f8a" stroke-width="2" stroke-linecap="round"/>
+    <line x1="35" y1="50" x2="46" y2="48" stroke="#2c5f8a" stroke-width="2" stroke-linecap="round"/>
+    <line x1="35" y1="58" x2="46" y2="56" stroke="#2c5f8a" stroke-width="2" stroke-linecap="round"/>
+    
+    <line x1="54" y1="40" x2="65" y2="42" stroke="#2c5f8a" stroke-width="2" stroke-linecap="round"/>
+    <line x1="54" y1="48" x2="65" y2="50" stroke="#2c5f8a" stroke-width="2" stroke-linecap="round"/>
+    <line x1="54" y1="56" x2="65" y2="58" stroke="#2c5f8a" stroke-width="2" stroke-linecap="round"/>
+</svg>

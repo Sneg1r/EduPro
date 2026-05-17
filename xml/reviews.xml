@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reviews>
+    <review>
+        <author>Анна Ковальчук</author>
+        <course>Математика</course>
+        <rating>5</rating>
+        <text>Благодаря курсам по математике сдала ЦТ на 92 балла! Преподаватель объясняет очень доступно, домашние задания проверяют вовремя.</text>
+        <date>2025-06-15</date>
+        <photo>image/photo/stud_3.jpg</photo>
+    </review>
+    
+    <review>
+        <author>Дмитрий Савченко</author>
+        <course>Английский язык</course>
+        <rating>4</rating>
+        <text>Английский язык с нуля до 95 баллов за полгода. Огромное спасибо Денису Владимировичу! Очень комфортная атмосфера на занятиях.</text>
+        <date>2025-07-10</date>
+        <photo>image/photo/stud_2.jpg</photo>
+    </review>
+    
+    <review>
+        <author>Екатерина Мороз</author>
+        <course>Физика</course>
+        <rating>5</rating>
+        <text>Физика - мой самый сложный предмет, но с Алексеем Павловичем я полюбила её! Результат - 100 баллов. Спасибо за веру в меня!</text>
+        <date>2025-05-20</date>
+        <photo>image/photo/stud_1.jpg</photo>
+    </review>
+</reviews>

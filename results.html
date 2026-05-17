@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результаты учеников | EduPro</title>
+    <link rel="stylesheet" href="scss/common.css">
+    <link rel="stylesheet" href="scss/results.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+             <div class="logo">
+                <img src="svg/logo.svg" alt="EduPro">
+                <span>EduPro</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог курсов</a></li>
+                <li><a href="results.html" class="active">Результаты</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <div class="burger">☰</div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Блок достижений (выравнивание по левому краю) -->
+        <div class="results-section">
+            <h2>🏆 Достижения выпускников</h2>
+            <div class="stats-grid stats-grid-left">
+                <div class="stat-card">🥇 100-балльников по математике: 42</div>
+                <div class="stat-card">🥇 100-балльников по физике: 29</div>
+                <div class="stat-card">🥇 100-балльников по английскому: 38</div>
+                <div class="stat-card">🥇 100-балльников по русскому: 47</div>
+            </div>
+        </div>
+
+        <!-- График успеваемости (сентябрь - май) -->
+        <div class="results-section">
+            <h3>📈 Динамика успеваемости (сентябрь — май)</h3>
+            <canvas id="progressChart" width="600" height="250" style="max-width:100%; background:#fff; border-radius:16px;"></canvas>
+        </div>
+
+        <!-- ОТЗЫВЫ  -->
+        <div class="results-section">
+            <h3>💬 Отзывы наших выпускников</h3>
+            <div class="reviews-grid">
+                
+                <!-- Отзыв 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="image/photo/stud_3.jpg" alt="Анна Ковальчук" class="testimonial-photo" onerror="this.src='https://via.placeholder.com/64?text=Фото'">
+                        <div class="testimonial-info">
+                            <h4>Анна Ковальчук</h4>
+                            <div class="testimonial-date">июнь 2025</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars"></div>
+                    <div class="testimonial-text">“Благодаря курсам по математике сдала ЦТ на 92 балла! Преподаватель объясняет очень доступно, домашние задания проверяют вовремя.”</div>
+                    <span class="testimonial-subject">Математика — 92 балла</span>
+                </div>
+
+                <!-- Отзыв 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="image/photo/stud_2.jpg" alt="Дмитрий Савченко" class="testimonial-photo" onerror="this.src='https://via.placeholder.com/64?text=Фото'">
+                        <div class="testimonial-info">
+                            <h4>Дмитрий Савченко</h4>
+                            <div class="testimonial-date">июль 2025</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars"></div>
+                    <div class="testimonial-text">“Английский язык с нуля до 95 баллов за полгода. Огромное спасибо Денису Владимировичу! Очень комфортная атмосфера на занятиях.”</div>
+                    <span class="testimonial-subject">Английский язык — 95 баллов</span>
+                </div>
+
+                <!-- Отзыв 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="image/photo/stud_1.jpg" alt="Екатерина Мороз" class="testimonial-photo" onerror="this.src='https://via.placeholder.com/64?text=Фото'">
+                        <div class="testimonial-info">
+                            <h4>Екатерина Мороз</h4>
+                            <div class="testimonial-date">май 2025</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-stars"></div>
+                    <div class="testimonial-text">“Физика - мой самый сложный предмет, но с Алексеем Павловичем я полюбила её! Результат - 100 баллов. Спасибо за веру в меня!”</div>
+                    <span class="testimonial-subject">Физика - 100 баллов</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   <footer>
+        <p>Тел: +375 (29) 123-45-67 | Почта: info@edupro.by</p>
+        <p>© 2026 Образовательный портал | Режим работы: пн-вс 10:00 – 22:00</p>  
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Только график (отзывы уже в HTML, не трогаем)
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof window.drawProgressChart === 'function') {
+                window.drawProgressChart();
+            } else if (typeof window.initResults === 'function') {
+                // fallback если функция называется initResults
+                window.initResults();
+            }
+        });
+    </script>
+</body>
+</html>

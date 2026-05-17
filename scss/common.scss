@@ -1,0 +1,264 @@
+// ===== ПЕРЕМЕННЫЕ =====
+$primary: #2c5f8a;
+$primary-dark: #1f3e57;
+$accent: #f4a261;
+$light: #f8fafc;
+$gray: #e2e8f0;
+$dark: #1e293b;
+$white: #ffffff;
+$shadow: 0 2px 12px rgba(0,0,0,0.05);
+
+// ===== RESET & БАЗА =====
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+body {
+    background: $light;
+    color: $dark;
+    font-size: 17px;
+    line-height: 1.45;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main { flex: 1; }
+
+// ===== НАВИГАЦИЯ =====
+.navbar {
+    background: $white;
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 48px;
+    box-shadow: $shadow;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 29px;
+        font-weight: bold;
+        color: $primary;
+        padding: 16px 0;
+        text-decoration: none;
+        
+        svg {
+            width: 40px;
+            height: 40px;
+            display: block;
+        }
+        
+        span {
+            font-size: 29px;
+            font-weight: bold;
+            color: $primary;
+        }
+    }
+
+    .nav-menu {
+        display: flex;
+        list-style: none;
+        gap: 32px;
+
+        a {
+            text-decoration: none;
+            color: $dark;
+            font-weight: 500;
+            font-size: 18px;
+            padding: 10px 0;
+            
+            &.active,
+            &:hover {
+                color: $primary;
+                border-bottom: 2px solid $primary;
+            }
+        }
+    }
+
+    .burger {
+        display: none;
+        font-size: 32px;
+        cursor: pointer;
+    }
+}
+
+// ===== АДАПТИВ НАВИГАЦИИ =====
+@media (max-width: 768px) {
+    .navbar {
+        .nav-menu {
+            display: none;
+            width: 100%;
+            flex-direction: column;
+            gap: 24px;
+            text-align: center;
+            background: $white;
+            padding: 16px 0;
+
+            &.show { display: flex; }
+            a { padding: 13px 0; }
+        }
+        .burger { display: block; }
+    }
+    .container { padding: 24px 16px; }
+}
+
+// ===== ОБЩИЕ КОМПОНЕНТЫ =====
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 32px 29px;
+}
+
+// ===== СТАТИСТИКА =====
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 32px 0;
+}
+
+.stat-card {
+    background: $white;
+    padding: 13px 32px;
+    border-radius: 48px;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: $shadow;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+// ===== СЕТКА КАРТОЧЕК =====
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin: 32px 0;
+
+    @media (max-width: 900px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    @media (max-width: 600px) {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+// ===== КАРТОЧКА КУРСА =====
+.course-card {
+    background: $white;
+    border-radius: 29px;
+    padding: 24px;
+    box-shadow: $shadow;
+    border: 1px solid $gray;
+    transition: transform 0.2s;
+    text-align: center;
+
+    &:hover { transform: translateY(-4px); }
+
+    .course-title {
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    .price {
+        font-size: 24px;
+        font-weight: bold;
+        color: $accent;
+        margin: 13px 0;
+    }
+}
+
+// ===== КНОПКИ =====
+.btn-primary, button, .enrollBtn, .filter-btn, #sendFeedbackBtn, #calcBtn {
+    background: $primary;
+    color: $white;
+    border: none;
+    padding: 12px 27px;
+    border-radius: 48px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+        background: $primary-dark;
+        transform: scale(0.98);
+    }
+}
+
+// ===== ФУТЕР =====
+footer {
+    text-align: center;
+    background: $primary-dark;
+    color: $white;
+    padding: 29px;
+    font-size: 16px;
+    margin-top: auto;
+    p { margin: 5px 0; }
+}
+
+// ===== ИКОНКИ (общие стили) =====
+.star-icon, .trophy-icon, .cap-icon, .stat-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.stat-icon {
+    width: 28px;
+    height: 28px;
+}
+
+// ===== АДАПТИВ ДЛЯ МОБИЛЬНЫХ =====
+@media (max-width: 600px) {
+    .star-icon, .trophy-icon, .cap-icon {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .stat-icon {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .stat-card {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+// ===== СТИЛИ ДЛЯ КОНТАКТНЫХ ИКОНОК =====
+.contact-icon,
+.social-icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 600px) {
+    .contact-icon,
+    .social-icon {
+        width: 14px;
+        height: 14px;
+    }
+    .social-icon {
+        width: 16px;
+        height: 16px;
+    }
+}
