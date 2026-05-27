@@ -3,7 +3,7 @@
     <course category="математика">
         <title>Математика</title>
         <teacher>Аделина Сергеевна</teacher>
-        <teacherImage>/image/photo/teacher_1.jpg</teacherImage>
+        <teacherImage>image/photo/teacher_1.jpg</teacherImage>
         <achievement>28 стобалльников</achievement>
         <price>23</price>
         <currency>BYN</currency>
@@ -12,7 +12,7 @@
     <course category="язык">
         <title>Русский язык</title>
         <teacher>Станислав Денисович</teacher>
-        <teacherImage>/image/photo/teacher_2.jpg</teacherImage>
+        <teacherImage>image/photo/teacher_2.jpg</teacherImage>
         <achievement>12 стобалльников</achievement>
         <price>23</price>
         <currency>BYN</currency>
